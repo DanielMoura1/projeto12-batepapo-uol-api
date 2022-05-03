@@ -118,7 +118,7 @@ app.post('/messages',async (req, res) => {
             
         });
         mongoClient.close();
-        res.send('ok');
+        res.status(201)
     } catch(e){
         console.log('deu ruim2')
         res.status(500)
